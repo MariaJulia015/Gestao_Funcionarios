@@ -117,7 +117,7 @@ class FuncionarioController {
             const btnEditar = document.createElement("button");
             btnEditar.innerText = "Editar";
             btnEditar.type = "button";
-            btnEditar.className = "btn btn-sm btn-warning me-1";
+            btnEditar.className = "btn btn-sm btn-primary me-1";
 
             const btnExcluir = document.createElement("button");
             btnExcluir.innerText = "Excluir";
