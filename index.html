@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EC02 - Gestão de Funcionários</title>
+</head>
+<body>
+    <h2>Startup de Tecnologia - Gestão de Funcionários</h2>
+    <hr>
+
+    <h4>Cadastro de Funcionários</h4>
+    <form id="formFuncionario" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
+        <br><br>
+
+        <label for="idade">Idade:</label><br>
+        <input type="number" id="idade" name="idade" min="0" placeholder="Digite a idade" required>
+        <br><br>
+
+        <label for="cargo">Cargo:</label><br>
+        <input type="text" id="cargo" name="cargo" placeholder="Digite o cargo" required>
+        <br><br>
+
+        <label for="salario">Salário:</label><br>
+        <input type="number" id="salario" name="salario" min="0" step="0.01" placeholder="Digite o salário" required>
+        <br><br>
+
+        <input type="submit" id="btnCadastrar" value="Cadastrar">
+        <input type="button" id="btnCancelar" value="Cancelar edição">
+    </form>
+
+    <hr>
+
+    <h4>Funcionários Cadastrados</h4>
+    <table border="1" cellpadding="3" cellspacing="0">
+        <thead>
+            <tr>
+                <th bgcolor="grey" width="50">ID</th>
+                <th bgcolor="grey" width="130">Nome</th>
+                <th bgcolor="grey" width="80">Idade</th>
+                <th bgcolor="grey" width="130">Cargo</th>
+                <th bgcolor="grey" width="130">Salário</th>
+                <th bgcolor="grey" width="150">Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaFuncionarios">
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h4>Relatórios</h4>
+    <input type="button" id="btnSalarioMaior5000" value="Salário maior que R$ 5000">
+    <input type="button" id="btnMediaSalarial" value="Média salarial">
+    <input type="button" id="btnCargosUnicos" value="Cargos únicos">
+    <input type="button" id="btnNomesMaiusculo" value="Nomes em maiúsculo">
+    <br><br>
+    <div id="resultadoRelatorio"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
