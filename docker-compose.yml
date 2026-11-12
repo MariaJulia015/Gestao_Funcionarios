@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8081:80"
+    volumes:
+      # monta a pasta do projeto no container: edite os arquivos e só recarregue o navegador
+      - ./:/usr/share/nginx/html:ro
