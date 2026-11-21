@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EC02 - Gestão de Funcionários</title>
+    <title>Gestão de Funcionários</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar navbar-tema">
         <div class="container justify-content-center">
-            <span class="navbar-brand mb-0 h1">Startup de Tecnologia - Gestão de Funcionários</span>
+            <span class="navbar-brand mb-0 h1 d-flex align-items-center">
+                <img src="./img/logo.png" alt="Logo">
+                Gestão de Funcionários
+            </span>
         </div>
     </nav>
 
     <div class="container mt-4">
         <h2>Cadastro de Funcionários</h2>
-        <hr>
+        <hr class="linha-tema">
         <form id="formFuncionario" method="post">
             <div class="row">
                 <div class="col-md-4">
@@ -44,14 +48,14 @@
                 </div>
             </div>
             <div class="d-flex justify-content-end gap-2">
-                <input type="button" class="btn btn-secondary" id="btnCancelar" value="Cancelar edição">
+                <input type="button" class="btn btn-outline-dark" id="btnCancelar" value="Cancelar edição">
                 <input type="submit" class="btn btn-primary" id="btnCadastrar" value="Cadastrar">
             </div>
         </form>
 
         <h2 class="mt-5">Funcionários Cadastrados</h2>
-        <hr>
-        <table class="table table-striped text-center">
+        <hr class="linha-tema">
+        <table class="table table-striped table-hover text-center bg-white">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -67,7 +71,7 @@
         </table>
 
         <h2 class="mt-5">Relatórios</h2>
-        <hr>
+        <hr class="linha-tema">
         <div class="row">
             <div class="col-md mb-2 d-grid"><input type="button" class="btn btn-outline-primary" id="btnSalarioMaior5000" value="Salário maior que R$ 5000"></div>
             <div class="col-md mb-2 d-grid"><input type="button" class="btn btn-outline-primary" id="btnMediaSalarial" value="Média salarial"></div>

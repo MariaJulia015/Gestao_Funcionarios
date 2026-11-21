@@ -117,12 +117,12 @@ class FuncionarioController {
             const btnEditar = document.createElement("button");
             btnEditar.innerText = "Editar";
             btnEditar.type = "button";
-            btnEditar.className = "btn btn-sm btn-primary me-1";
+            btnEditar.className = "btn btn-sm btn-warning me-1";
 
             const btnExcluir = document.createElement("button");
             btnExcluir.innerText = "Excluir";
             btnExcluir.type = "button";
-            btnExcluir.className = "btn btn-sm btn-danger";
+            btnExcluir.className = "btn btn-sm btn-dark";
 
             const actionCell = linha.insertCell(5);
             actionCell.appendChild(btnEditar);
